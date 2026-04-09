@@ -384,7 +384,7 @@
   
   .calendar-rings {
     flex-direction: row;
-    top: 50%;
+    top: 300px;
     left: 0;
     right: 0;
     bottom: auto;
@@ -401,5 +401,6 @@
 
   .hero-image-wrapper {
     min-height: 300px;
+    height: 300px;
   }
 }

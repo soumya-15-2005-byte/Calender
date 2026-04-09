@@ -200,7 +200,7 @@ const Calendar: React.FC = () => {
   };
 
   return (
-    <div className="calendar-wall floating-effect" style={{ '--theme-color': currentTheme } as React.CSSProperties}>
+    <div className="calendar-wall" style={{ '--theme-color': currentTheme } as React.CSSProperties}>
       <div className="calendar-rings">
         {[...Array(20)].map((_, i) => (
           <div key={i} className="ring" />
