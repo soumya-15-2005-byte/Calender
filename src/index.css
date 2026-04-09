@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --font-family: 'Outfit', system-ui, sans-serif;
+  --bg-color: #e2e8f0;
+  --card-bg: #ffffff;
+  --text-main: #0f172a;
+  --text-muted: #64748b;
+  --primary: #2563eb;
+  --primary-light: #eff6ff;
+  --border-color: #e2e8f0;
+  --shadow-calendar: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  --border-radius: 16px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: #f4f4f5;
+  /* Explicit Concrete Wall Texture */
+  background-image: 
+    url('https://www.transparenttextures.com/patterns/concrete-wall.png'),
+    linear-gradient(to bottom, #f8fafc, #e2e8f0);
+  background-attachment: fixed;
+  color: var(--text-main);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Floating effect */
+@keyframes floating-effect {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-8px) rotate(0.5deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(-0.5deg);
+  }
+  75% {
+    transform: translateY(-8px) rotate(-0.2deg);
+  }
+}
+
+.floating-effect {
+  animation: floating-effect 8s ease-in-out infinite;
+}
+
+#root {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
